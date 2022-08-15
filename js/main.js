@@ -4,6 +4,7 @@ const bikeEl = document.querySelector(".bycycle");
 const carEl = document.querySelector(".car");
 const planeEl = document.querySelector(".plane");
 const button = document.querySelector(".check-btn");
+const reset = document.querySelector(".reset");
 const limitedNumber = 1000000;
 
 button.addEventListener("click", function() {
@@ -43,5 +44,8 @@ button.addEventListener("click", function() {
         carEl.innerText = "Afsuski bunday uzoq masofa qabul qilinmaydi ❌";
         planeEl.innerText = "Afsuski bunday uzoq masofa qabul qilinmaydi ❌";
     }
+})
+reset.addEventListener("click", function reset() {
+    inputEl.value = "";
 })
 
